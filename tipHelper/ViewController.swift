@@ -43,14 +43,18 @@ class ViewController: UIViewController {
     UIApplication.shared.open(url)
   }
 
+  func round2(value: Double) -> Double {
+    return round(100 * (value))/100
+  }
+  
   func calcValues(){
     if (amountTextField.text == "") {
       amountTextField.text = "0.00"
     }
     let amount = Double(amountTextField.text!)
-    let tax = round(100 * (amount! * taxRate))/100
-    let tip = round(100 * (amount! * tipRate))/100
-    let total = amount! + tax + tip
+    let tax = round2(value: amount! * taxRate)
+    let tip = round2(value: amount! * tipRate)
+    let total = round2(value: amount! + tax + tip)
     taxTextField.text = String(tax)
     tipTextField.text = String(tip)
     totalTextField.text = String(total)
@@ -73,7 +77,7 @@ class ViewController: UIViewController {
     if (tipTextField.text == "") {
       tipRate = 0.15
       tipRateSegmentedControl.selectedSegmentIndex = 1
-      tip = round(100 * (amount! * tipRate))/100
+      tip = round2(value: amount! * tipRate)
     }
     totalTextField.text = String(amount! + tax! + tip!)
   }
@@ -108,13 +112,13 @@ class ViewController: UIViewController {
       amount = 0.00
     }
     if (totalTextField.text == "") {
-      totalTextField.text = String(amount! + tax! + tip!)
+      totalTextField.text = String(round2(value: amount! + tax! + tip!))
     }
     let total: Double = Double(totalTextField.text!)!
     if (total < Double(amount! + tax!)) {
-      totalTextField.text = String(amount! + tax!)
+      totalTextField.text = String(round2(value: amount! + tax!))
     }
-    tipTextField.text = String(total - amount! - tax!)
+    tipTextField.text = String(round2(value: total - amount! - tax!))
   }
   
   
