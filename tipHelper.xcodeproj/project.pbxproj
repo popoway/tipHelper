@@ -37,7 +37,6 @@
 		9201166921435EA9006EC588 /* tipHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tipHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9201166C21435EA9006EC588 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9201166E21435EA9006EC588 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9201167121435EA9006EC588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9201167321435EA9006EC588 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9201167621435EA9006EC588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9201167821435EA9006EC588 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +46,8 @@
 		9201168821435EA9006EC588 /* tipHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9201168C21435EA9006EC588 /* tipHelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipHelperUITests.swift; sourceTree = "<group>"; };
 		9201168E21435EA9006EC588 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9239C59321519D700083569D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		9239C59721519F530083569D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +82,7 @@
 				9201168021435EA9006EC588 /* tipHelperTests */,
 				9201168B21435EA9006EC588 /* tipHelperUITests */,
 				9201166A21435EA9006EC588 /* Products */,
+				9201168321435EA9006EC588 /* Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,7 +113,6 @@
 			isa = PBXGroup;
 			children = (
 				9201168121435EA9006EC588 /* tipHelperTests.swift */,
-				9201168321435EA9006EC588 /* Info.plist */,
 			);
 			path = tipHelperTests;
 			sourceTree = "<group>";
@@ -299,7 +300,7 @@
 		9201167021435EA9006EC588 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9201167121435EA9006EC588 /* Base */,
+				9239C59721519F530083569D /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -308,6 +309,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9201167621435EA9006EC588 /* Base */,
+				9239C59321519D700083569D /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -319,6 +321,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -378,6 +381,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

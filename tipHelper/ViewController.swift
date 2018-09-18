@@ -12,18 +12,27 @@ class ViewController: UIViewController {
   
   @IBOutlet var amountTextField: UITextField!
   @IBOutlet var taxTextField: UITextField!
+  @IBOutlet var tipLabel: UILabel!
   @IBOutlet var tipTextField: UITextField!
   @IBOutlet var tipRateSegmentedControl: UISegmentedControl!
+  @IBOutlet var totalLabel: UILabel!
   @IBOutlet var totalTextField: UITextField!
+  @IBOutlet var startOverButton: UIButton!
+  @IBOutlet var shareButton: UIButton!
   
   override func viewDidLoad() {
     super.viewDidLoad()
-
+    // Do any additional setup after loading the view, typically from a nib.
+    
   }
-
+  
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
+  }
+  
+  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    self.view.endEditing(true) // hide keyboard when touching blank
   }
   
   let taxRate = 0.0875
