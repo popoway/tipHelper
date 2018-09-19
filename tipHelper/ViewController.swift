@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     self.view.endEditing(true) // hide keyboard when touching blank
   }
   
-  let taxRate = 0.0875
+  let taxRate = 0.08875
   var tipRate = 0.15
   
   @IBAction func infoButtonTouched(_ sender: UIButton) {
